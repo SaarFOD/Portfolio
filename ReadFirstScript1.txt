@@ -1,14 +1,14 @@
 Read First Before Reading the Script
 
-Script uitleg
+Script explanation
 
-After all the data information was gathered the information was structured by hand in a ‘R’ query. 
+After all the data information was gathered the information was structured by hand in a ‘R’ query script. 
 
-First the outcomes of the data of thefts and abuse in the year 2012 were sepperatly filled into a file called ‘Diefstal’ and ‘Mishandeling’. These numbers were still absolute. To make the ratio between these two components we use a query to divide the numbers of abuse to theft and then multiplied it to 100. These rates were than presented as percentages. Into the file ‘PercentCrimi’. The same order of query was then made to the following year: 2013. The results of the ratio were then filled into the list position. This query was inputted into the file ‘data’. Of the file ‘data’ we made a barplot with added names of the tables and added the specification for the colors. After this step we made a legend to specify the meaning of the information shown in the barplot. To make sense of the table with ease we added the specifiek numbers of the percentages in each row. Voila! A Barplot to answer the first research question. 
+First the outcomes of the data of thefts and abuse in the year 2012 were separately filed into a file called ‘Diefstal’ and ‘Mishandeling’. These numbers were still absolute. To make the ratio between these two components we used a query to divide the numbers of abuse to theft and then multiplied it to 100. These rates were than presented as percentages. Into the file ‘PercentCrimi’. The same order of steps (query) was then also made for the following year: 2013. The results of the ratio were then filed into the list position into the file ‘data’. Of the file ‘data’ we made a barplot with added names of the tables and added the specification for the colors. After this step we made a legend to specify the meaning of the information shown in the barplot. To make sense of the table with ease we added the specifiek numbers of the percentages in each row. Voila! A Barplot to answer the first research question. 
 
 
 
-setwd("/Users/Saar/temp")
+<!—-setwd("/Users/Saar/temp”)—->
 Diefstal <- c(73435, 65, 29, 49)
 Mishandeling <- c(5075, 21, 8, 37)
 PercentCrimi <- Mishandeling / Diefstal * 100
